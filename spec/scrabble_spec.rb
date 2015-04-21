@@ -9,7 +9,11 @@ describe('String#scrabble') do
   end
 
   #it takes a word and returns it as a scrabble score
-  it("takes a word and returns a scarbble score") do
+  it("takes a word and returns a scrabble score") do
     expect("hello".scrabble()).to(eq(8))
+  end
+  #it takes any uppercase letters in a word and returns scrabble score
+  it("takes any uppercase letter and returns scrabble score") do
+    expect("HELLO".scrabble()).to(eq(8))
   end
 end
