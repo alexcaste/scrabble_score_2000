@@ -12,6 +12,19 @@ class String
    letters.each() do |letter|
    if score1.include?(letter)
      your_score = your_score.+(1)
+   elsif score2.include?(letter)
+     your_score = your_score.+(2)
+   elsif score3.include?(letter)
+     your_score = your_score.+(3)
+   elsif score4.include?(letter)
+     your_score = your_score.+(4)
+   elsif score5.include?(letter)
+     your_score = your_score.+(5)
+   elsif score8.include?(letter)
+     your_score = your_score.+(8)
+   else 
+     your_score = your_score.+(10)
+
  end
  end
  your_score
