@@ -7,7 +7,7 @@ class String
    score5 = ["k"]
    score8 = ["j", "x"]
    score10 = ["q", "z"]
-   letters = self.split("")
+   letters = self.downcase().split("")
    your_score = 0
    letters.each() do |letter|
    if score1.include?(letter)
@@ -22,7 +22,7 @@ class String
      your_score = your_score.+(5)
    elsif score8.include?(letter)
      your_score = your_score.+(8)
-   else 
+   else
      your_score = your_score.+(10)
 
  end
