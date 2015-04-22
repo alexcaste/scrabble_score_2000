@@ -1,9 +1,9 @@
-require (cabybara/rspec)
-require (./app)
+require ('capybara/rspec')
+require ('./app')
 Capybara.app = Sinatra::Application
 
-  describe ("the scrabble path" , { type => feature}) do
-    it("processes the user entry and returns the scarbble score") do
+  describe('the scrabble path', {:type => :feature}) do
+    it("processes the user entry and returns the scrabble score") do
     visit('/')
     fill_in('word_input' , :with => "word")
     cick_button('Send')
